@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="tarea.css">
+</head>
+
+<body>
+    <div class="container-fluid" style="background-color: blueviolet; padding: 20px; text-align: center;">Aerolineas
+    </div>
+    <div><img src="C:\Users\PC\Desktop\Curso Professional Web\MODULO2\unidad4\avion.jpg" class="img-fluid"
+            alt="Responsive image" >
+
+    </div>
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+        <button type="button" class="btn btn-secondary">Alojamientos</button>
+        <button type="button" class="btn btn-secondary">Vuelos</button>
+        <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Paquetes
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <a class="dropdown-item" href="#">vuelo+estadia</a>
+                <a class="dropdown-item" href="#">vuelo+seguro</a>
+                <a class="dropdown-item" href="#">vuelo+all inclusive</a>
+            </div>
+        </div>
+        <button type="button" class="btn btn-secondary">Ofertas</button>
+    </div>
+    </div>
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+            aria-describedby="btnGroupAddon">
+        <div class="input-group-prepend">
+            <div class="input-group-text" id="btnGroupAddon">Buscar</div>
+        </div>
+
+    </div>
+
+
+
+
+    <h3 class="centrar" style="padding-top: 25px;">Vuelos baratos</h3>
+    <h6 class="centrar">Ofertas del momento</h6>
+    <table class="table table-active">
+        <thead>
+            <tr>
+                <th scope="col">Destino</th>
+                <th scope="col">Pasaje</th>
+                <th scope="col">fechas</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Disponibilidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-success">
+                <th scope="row">San Carlos de Bariloche</th>
+                <td>ida y vuelta</td>
+                <td>flexible</td>
+                <td>$9300</td>
+                <td>Disponible</td>
+            </tr>
+            <tr class="table-danger">
+                <th scope="row">Madrid</th>
+                <td>ida y vuelta</td>
+                <td>22/09/2021 - 12/10/2021</td>
+                <td>$91300</td>
+                <td>Completo</td>
+            </tr>
+            <tr class="table-warning">
+                <th scope="row">Santiago de Chile</th>
+                <td>ida y vuelta</td>
+                <td>18/03/2022 - 26/03/2022</td>
+                <td>$26900</td>
+                <td>Casi lleno</td>
+            </tr>
+            <tr class="table-success">
+                <th scope="row">Miami</th>
+                <td>ida y vuelta</td>
+                <td>flexible</td>
+                <td>$136200</td>
+                <td>Disponible</td>
+            </tr>
+            <tr class="table-danger">
+                <th scope="row">Lima</th>
+                <td>ida y vuelta</td>
+                <td>21/11/2021 - 01/12/2021</td>
+                <td>$114500</td>
+                <td>Completo</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="alert alert-secondary" role="alert">
+        Accede a ofertas exclusivas <span class="border border-warning">SOLO POR HOY: </span><a href="#"
+            class="alert-link">https://www.despegar.com.ar/ofertas-de-viajes</a>.
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card" style="width: 18rem; margin: 24px">
+                <img src="C:\Users\PC\Desktop\Curso Professional Web\MODULO2\unidad4\uruguay.jpg" class="card-img-top"
+                    alt="Imagen de uruguay" style="height: 250px; width: 286px;object-fit: cover;">
+                <div class="card-body">
+                    <p class="card-text" style="font-size: 24px; cursor:pointer;">Escapada a Uruguay por un día.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 18rem; margin: 24px">
+                <img src="C:\Users\PC\Desktop\Curso Professional Web\MODULO2\unidad4\mardelplata.jpg" class="card-img-top"
+                    alt="Imagen de Mar del Plata" style="height: 250px; width: 286px;object-fit: cover;">
+                <div class="card-body">
+                    <p class="card-text" style="font-size: 24px; cursor:pointer;">Disfruta el fin de semana en la feliz</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 18rem; margin: 24px">
+                <img src="C:\Users\PC\Desktop\Curso Professional Web\MODULO2\unidad4\salta.jpg" class="card-img-top"
+                    alt="Imagen de Salta" style="height: 250px; width: 286px;object-fit: cover;">
+                <div class="card-body">
+                    <p class="card-text" style="font-size: 24px; cursor:pointer;">Salta. Tan linda que enamora</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table style="height: 100px;">
+        <tbody>
+            <tr>
+                <td class="align-baseline"><span class="border border-danger">No pierda</span> </td>
+                <td class="align-middle"><span class="border border-danger">LA OPORTUNIDAD</span></td>
+                <td class="align-bottom"><span class="border border-danger">De viajar</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
